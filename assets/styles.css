@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: blue;
+}
+
+.main_container{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}

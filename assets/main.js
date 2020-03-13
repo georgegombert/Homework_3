@@ -13,7 +13,7 @@ var includeSpecial = false;
 var baseCharacters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var baseUpperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 var baseNumbers = ['0','1','2','3','4','5','6','7','8','9'];
-var baseSpecial = ["U+0021","U+0022"];
+var baseSpecial = ["\&","\*","\^","\,","\#","\@","\!","\%","\.","\?","\;","\:","\(","\)"];
 
 // event listeners for when the form is manipulated (slider & check boxes)
 document.getElementById('includeUpperCase').addEventListener( 'change', function() {

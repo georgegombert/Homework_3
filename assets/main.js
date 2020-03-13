@@ -4,10 +4,10 @@
 var sliderValue = document.getElementById('paswordCharacterCount'); //range slider in form
 var passwordCharacterCount  = parseInt(sliderValue.value); // turning sliver string return into an integer
 
-//variable declarations for the check boxes
-var includeUpperCase = document.getElementById('includeUpperCase'); // have to figure out how to set initial value or read initial value
-var includeNumbers = document.getElementById('includeNumbers');
-var includeSpecial = document.getElementById('includeSpecial');
+//variable declarations for the check boxes and setting initial values
+var includeUpperCase = false; 
+var includeNumbers = false;
+var includeSpecial = false;
 
 // creating the arrays for all the possible password characters
 var baseCharacters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -16,7 +16,7 @@ var baseNumbers = ['0','1','2','3','4','5','6','7','8','9'];
 var baseSpecial = ["U+0021","U+0022"];
 
 // event listeners for when the form is manipulated (slider & check boxes)
-includeUpperCase.addEventListener( 'change', function() {
+document.getElementById('includeUpperCase').addEventListener( 'change', function() {
     if(this.checked) {
         includeUpperCase = true;
     } else {
@@ -24,7 +24,7 @@ includeUpperCase.addEventListener( 'change', function() {
     }
 })
 
-includeNumbers.addEventListener( 'change', function() {
+document.getElementById('includeNumbers').addEventListener( 'change', function() {
     if(this.checked) {
         includeNumbers = true;
     } else {
@@ -32,7 +32,7 @@ includeNumbers.addEventListener( 'change', function() {
     }
 })
 
-includeSpecial.addEventListener( 'change', function() {
+document.getElementById('includeSpecial').addEventListener( 'change', function() {
     if(this.checked) {
         includeSpecial = true;
     } else {
@@ -45,8 +45,6 @@ sliderValue.addEventListener('change', function(){
     passwordCharacterCount  = parseInt(sliderValue);
     console.log(sliderValue , passwordCharacterCount);
 })
-
-
 
 
 function generatePassword(){

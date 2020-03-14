@@ -8,7 +8,12 @@ body{
 }
 
 .main_container{
+    margin-top: 20px;
     width: 50%;
     position: relative;
     left: 25%;
+}
+
+.slider-display{
+    margin-left: 4px;
 }

@@ -43,9 +43,12 @@ document.getElementById('includeSpecial').addEventListener( 'change', function()
 sliderValue.addEventListener('change', function(){
     sliderValue = document.getElementById('paswordCharacterCount').value;
     passwordCharacterCount  = parseInt(sliderValue);
-    console.log(sliderValue , passwordCharacterCount);
 })
 
+//live update of the slider value
+sliderValue.oninput = function(){
+    document.getElementById('sliderDisplay').textContent = this.value + ' Characters';
+}
 
 function generatePassword(){
     var password = []; //empty array that is filled by the different if statements

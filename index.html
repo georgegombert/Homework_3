@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Paswords</title>
+    <!-- including bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css">
     
 </head>
 <body>
     <main class=" bg-light main_container">
+        <!-- main container and genarate button -->
         <div class="d-flex justify-content-center">
             <h3>Password Generator</h3>
         </div>
@@ -19,15 +21,16 @@
         <div class="d-flex justify-content-center pb-2">
             <button class="btn btn-primary" id="genarateButton" onclick="generatePassword()">Generate Password!</button>
         </div>
-        
+        <!-- form to alter password options -->
         <form class="p-4" id="passwordOptions">
             <h4>Password length</h4>
             <input type="range" min="8" max="128" value="8" class="slider-pic" id="paswordCharacterCount">
+            <span class="slider-display" id="sliderDisplay">8 Characters</span>
             <br><br>
             <h4>Include in password</h4>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="true" id="includeUpperCase">
-                <label class="form-check-label" for="ncludeUpperCase">Upper Case</label>
+                <label class="form-check-label" for="includeUpperCase">Upper Case</label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="true" id="includeNumbers">

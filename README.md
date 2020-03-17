@@ -7,4 +7,7 @@ The following site creates random passwords that range from 8-128 characters and
 
 Going forward I would like to create a checking function that will test the password to make sure it includes all the required characters. This will get rid of the off chance that the randomly generated password will miss those values in the password array. This is a small problem and is unlikely with longer passwords but is still a good next step. 
 
+3/16/20
+Updated the theme of the website to match the times. Hopefully it looks a little more interesting now.
+
 ![Webpage image](images/demo-image.png)

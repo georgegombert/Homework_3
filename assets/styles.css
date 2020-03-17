@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: blue;
+    background-image: url(../images/Matrix.jpg);
 }
 
 .main_container{
@@ -12,8 +12,21 @@ body{
     width: 50%;
     position: relative;
     left: 25%;
+    background-color: black;
 }
 
 .slider-display{
     margin-left: 4px;
+}
+
+.text-green{
+    color: rgb(183, 273, 184);
+}
+
+.my-btn{
+    background-color: rgb(183, 273, 184);
+}
+
+.my-btn:hover, .my-btn:active, .my-btn:focus, .my-btn:visited{
+    background-color: rgb(93, 255, 99);
 }
